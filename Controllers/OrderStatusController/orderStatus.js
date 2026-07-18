@@ -1,8 +1,8 @@
 const ordersModel = require("../../Model/orderModel");
 const { getIo } = require("../../socket"); // We will create this helper
-const razorpay = require("../../config/razorpayConfig");
+const razorpay = require("../../Config/razorpayConfig");
 const RefundModel = require("../../Model/refundModel");
-const transporter = require("../../config/emailConfig");
+const transporter = require("../../Config/emailConfig");
 
 async function updateOrderStatus(req, res) {
     try {

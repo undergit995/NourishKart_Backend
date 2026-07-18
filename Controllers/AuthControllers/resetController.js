@@ -1,5 +1,5 @@
 const userModel = require("../../Model/userModel");
-const transporter = require("../../config/emailConfig");
+const transporter = require("../../Config/emailConfig");
 const otpModel = require("../../Model/otpModel");
 const emailSender = require("../../Utils/emailSender");
 const resetModel = require("../../Model/ResetModel");
