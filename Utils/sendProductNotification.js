@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer");
 const UserModel = require("../Model/userModel");
 const path = require("path");
-const transporter = require("../config/emailConfig");
+const transporter = require("../Config/emailConfig");
 
 /**
  * Sends an email notification to all registered customers when a new product is added.

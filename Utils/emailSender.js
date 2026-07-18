@@ -1,4 +1,4 @@
-const transporter = require("../config/emailConfig");
+const transporter = require("../Config/emailConfig");
 const otpGenerator = require('otp-generator');
 
 
