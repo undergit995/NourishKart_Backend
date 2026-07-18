@@ -1,6 +1,6 @@
 const userModel = require("../../Model/userModel");
 const otpModel = require("../../Model/otpModel");
-const transporter = require("../../config/emailConfig");
+const transporter = require("../../Config/emailConfig");
 const emailSender = require("../../Utils/emailSender");
 const { regToken } = require("../../Utils/TokenGenerator");
 const decodeToken = require("../../Utils/decodeToken");
