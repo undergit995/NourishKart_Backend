@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const cors = require('cors')
-const ConnectDB = require('./config/connectDB');
+const ConnectDB = require('./Config/connectDB');
 const RegRouter = require("./Routes/Auth/Registration")
 const ResetRouter = require("./Routes/Auth/ResetPassword")
 const LoginRouter = require("./Routes/Auth/Login")
@@ -22,7 +22,7 @@ const couponRouter = require('./Routes/Coupon/couponRouter');
 
 const customerProfileRouter = require('./Routes/customer/customerProfile');
 const isCustomer = require('./MiddleWare/customerAuth');
-const upload = require('./config/multerConfig');
+const upload = require('./Config/multerConfig');
 const PaymentRouter = require('./Routes/Payments/razorpayRoutes');
 const DeveloperRouter = require('./Routes/DevepolerRoutes/Devepoler');
 const reviewRouter = require('./Routes/Review/Review');
