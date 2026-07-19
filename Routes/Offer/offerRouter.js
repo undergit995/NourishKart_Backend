@@ -1,7 +1,7 @@
 let express = require("express");
 const { getOffers, setOffer, deleteOffer, updateOffer, updateStatus } = require("../../Controllers/OfferController/offer");
 const isAdmin = require("../../MiddleWare/adminAuth");
-const upload = require("../../config/multerConfig");
+const upload = require("../../Config/multerConfig");
 let router = express.Router();
 
 
