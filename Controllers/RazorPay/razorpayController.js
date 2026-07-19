@@ -1,5 +1,5 @@
 const crypto = require("crypto");
-const razorpay = require("../../config/razorpayConfig");
+const razorpay = require("../../Config/razorpayConfig");
 const cartModel = require("../../Model/cartModel");
 const { getIo } = require("../../socket");
 const ordersModel = require("../../Model/orderModel");
