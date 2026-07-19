@@ -4,7 +4,7 @@ const isCustomer = require("../../MiddleWare/customerAuth");
 const addressModel = require("../../Model/addressModel");
 const {updateCustomerProfile,deleteCustomerProfile,addingAddress,deleteAddress,updateAddress, getCustomerProfile, postCustomerPhoto, getCustomerAddresses, getCustomerAddressById, setDefaultAddress, getCustomerPhoto, deleteCustomerPhoto} = require("../../Controllers/CustomerController/customerProfUpdate");
 const photoModel = require("../../Model/photoModel");
-const upload = require("../../config/multerConfig");
+const upload = require("../../Config/multerConfig");
 
 
 const router = express.Router();
@@ -29,6 +29,7 @@ router.post("/uploadPhoto/:id", upload.single("file"), postCustomerPhoto);
 
 //customer getting phots
 router.get("/getPhoto/:id",getCustomerPhoto);
+
 
 //deleting customer photos
 router.delete("/deletePhoto/:id",deleteCustomerPhoto);

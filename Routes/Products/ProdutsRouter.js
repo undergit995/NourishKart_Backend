@@ -1,5 +1,5 @@
 const express = require("express");
-const upload = require('../../config/multerConfig');
+const upload = require('../../Config/multerConfig');
 const ProductModel = require("../../Model/ProductModel");
 const isAdmin = require('../../MiddleWare/adminAuth');
 const { addProduct, updateProduct, deleteProduct, allProduct ,getProductsByCategory} = require("../../Controllers/ProductController/Produrcts");
