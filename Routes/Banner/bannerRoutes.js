@@ -1,7 +1,7 @@
 const express = require('express');
 const { allBanners, setBanner, deleteBanner, updateBanner, bannerStatus } = require('../../Controllers/BannerController/Banners');
 const isAdmin = require('../../MiddleWare/adminAuth');
-const upload = require('../../config/multerConfig');
+const upload = require('../../Config/multerConfig');
 
 const router = express.Router()
 
