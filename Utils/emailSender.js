@@ -14,8 +14,8 @@ async function emailSender(userData){
             const info = await transporter.sendMail({
                 from: process.env.EMAIL,
                 to: targetEmail,
-                subject: "Welcome to Powerbites",
-                text: `Welcome to Powerbites, ${targetName}! your verification code is ${otp}`,
+                subject: "Welcome to NourishKart",
+                text: `Welcome to NourishKart, ${targetName}! your verification code is ${otp}`,
 
             })
 
