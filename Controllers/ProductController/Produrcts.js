@@ -102,10 +102,10 @@ async function addProduct(req, res) {
         // const products = await ProductModel.create(product);
 
         if (req.body.sendUpdates == "on") {
-            sendProductNotification(products)
+            sendProductNotification(product)
         }
          cache.flushAll();
-        const Product = await ProductModel.findById(products._id)
+        const Product = await ProductModel.findById(product._id)
             .populate("category", "name");
 
         return res.status(200).json({
@@ -115,8 +115,6 @@ async function addProduct(req, res) {
 
        
     } catch (err) {
-        console.log(err);
-
         return res.status(500).json({
             success: false,
             message: err.message

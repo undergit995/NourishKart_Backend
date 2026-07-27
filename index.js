@@ -52,8 +52,13 @@ const { Server } = require("socket.io");
 
 // app.post("/upload",)
 const app = express()
-app.use(cors())
-
+app.use(cors({
+    
+    
+    // origin: 'https://nourish-kart.vercel.app/', 
+    // credentials: true // Allow cookies to be sent
+}));
+ 
 // Use cookie-parser middleware to parse cookies from incoming requests
 app.use(cookieParser());
 
@@ -73,7 +78,7 @@ app.use("/upload", express.static(path.join(__dirname, "upload")))
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:5173", // Your frontend URL
+        origin: "https://nourish-kart-nugdm6vlj-avinash-b-v.vercel.app", // Your frontend URL
         methods: ["GET", "POST"]
     }
 });
